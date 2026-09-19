@@ -1,5 +1,12 @@
 # Entity Management System – Backend Service
 
+[![Go](https://img.shields.io/badge/Go-1.24+-00ADD8?style=flat-square&logo=go&logoColor=white)](https://go.dev/)
+[![Gin](https://img.shields.io/badge/Framework-Gin-00ADD8?style=flat-square&logo=gin&logoColor=white)](https://gin-gonic.com/)
+[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL_16-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-Compose_Ready-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Architecture](https://img.shields.io/badge/Architecture-Clean_Architecture-8A2BE2?style=flat-square)](https://blog.cleancoder.com/)
+[![API](https://img.shields.io/badge/API-RESTful-orange?style=flat-square)](https://restfulapi.net/)
+
 > 👤 **Maintained by:** **Muhammad Rifky Janzani**  
 > ⚙️ **Tech Stack:** Go (Gin) • PostgreSQL 16 • Docker Compose • Clean Architecture
 
