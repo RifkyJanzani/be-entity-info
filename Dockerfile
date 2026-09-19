@@ -1,5 +1,7 @@
 # Build stage
-FROM golang:1.23-alpine AS builder
+FROM golang:1.24-alpine AS builder
+
+ENV GOTOOLCHAIN=auto
 
 WORKDIR /app
 
@@ -7,7 +9,7 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -o /server ./cmd/server
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -o /server ./cmd/server
 
 # Runtime stage
 FROM alpine:3.20
@@ -18,7 +20,6 @@ WORKDIR /app
 
 COPY --from=builder /server .
 COPY --from=builder /app/migrations ./migrations
-COPY --from=builder /app/.env .env
 
 EXPOSE 8080
 
