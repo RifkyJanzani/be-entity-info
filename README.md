@@ -1,4 +1,4 @@
-# Entity Management System – Backend Service
+# 📍 Entity Management System – Backend Service
 
 [![Go](https://img.shields.io/badge/Go-1.24+-00ADD8?style=flat-square&logo=go&logoColor=white)](https://go.dev/)
 [![Gin](https://img.shields.io/badge/Framework-Gin-00ADD8?style=flat-square&logo=gin&logoColor=white)](https://gin-gonic.com/)
